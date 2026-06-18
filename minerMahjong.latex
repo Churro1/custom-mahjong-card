@@ -1,0 +1,138 @@
+, \cR\documentclass[8pt]{extarticle}
+\usepackage[paperwidth=15.25in, paperheight=4in, margin=0.2in]{geometry}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% NMJL Style Colors
+\definecolor{mjred}{RGB}{210, 30, 40}
+\definecolor{mjblue}{RGB}{20, 60, 180}
+\definecolor{mjgreen}{RGB}{30, 140, 50}
+\definecolor{mjblack}{RGB}{0,0,0}
+\definecolor{mjgray}{RGB}{100, 100, 100}
+
+% Macros
+\newcommand{\cB}[1]{\textcolor{mjblue}{\textbf{#1}}}
+\newcommand{\cR}[1]{\textcolor{mjred}{\textbf{#1}}}
+\newcommand{\cG}[1]{\textcolor{mjgreen}{\textbf{#1}}}
+\newcommand{\cFW}[1]{\textcolor{mjblack}{\textbf{#1}}}
+\newcommand{\score}[2]{\textbf{#1} \hspace{1mm} \textbf{#2}}
+\newcommand{\desc}[1]{\textcolor{mjgray}{\textit{#1}}}
+
+\newcommand{\category}[1]{
+    \vspace{2mm}
+    \begin{tcolorbox}[colback=white, colframe=black, fonttitle=\bfseries\normalsize, title=\centering #1, boxrule=0.5pt, arc=0pt, left=1pt, right=1pt, top=1pt, bottom=1pt, coltitle=black, colbacktitle=black!10]
+}
+\newcommand{\categoryend}{\end{tcolorbox}}
+
+\begin{document}
+
+\setlength{\columnsep}{0.15in}
+\raggedcolumns
+\begin{multicols}{3}
+
+\category{FAMILY}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{FFF} \cB{D} \cR{444} \cG{555} \cR{666} \cB{D} \dotfill \desc{D one suit, Any Two Suits, These Nos. Only} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FF} \cR{1974} \cG{1974} \cB{1974} \dotfill \desc{3 Suits} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FFFF} \cR{114} \cG{{58} \cG{87}} \cB{330} \dotfill \desc{3 Suits} \dotfill & \score{X}{25} \\[2pt]
+\cG{1025} \cR{0605} \cB{7468} \cB{DD} \dotfill \desc{Dragons Match Years} \dotfill & \score{X}{25} \\[2pt]
+\cB{128} \cB{DD} \cG{128} \cG{DD} \cR{1994} \dotfill & \score{X}{25} \\[2pt]
+\cB{1111} \cB{999} \cR{7777} \cR{444} \dotfill & \score{X}{25} \\[2pt]
+\cFW{WW} \cFW{EE} \cB{DD} \cR{0128} \cG{1994} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cR{111} \cG{555} \cG{888} \cB{333} \dotfill \desc{3 Suits} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cR{0605} \cFW{SWEN} \cB{1974} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cG{1025} \cFW{SWEN} \cB{1968} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{WINDS/DRAGON}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{FF} \cR{DDDD} \cG{DDDD} \cB{DDDD} \dotfill & \score{X}{25} \\[2pt]
+\cFW{SSS} \cFW{WWWW} \cFW{EEEE} \cFW{NNN} \dotfill & \score{X}{25} \\[2pt]
+\cFW{WWW} \cFW{EEEE} \cB{DDD} \cG{DDDD} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FF} \cB{W1ND} \cR{W1ND} \cG{W1ND} \dotfill & \score{C}{30} \\[2pt]
+\cFW{NNNN} \cFW{SSSS} \cB{DD} \cR{DD} \cG{DD} \dotfill & \score{C}{30} \\[2pt]
+\cFW{S} \cFW{WW} \cFW{EEE} \cFW{NNNN} \cB{DDDD} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FFF} \cFW{NEW} \cFW{NEW} \cFW{NEW} \cB{11} \dotfill \desc{Any Number Pair} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+
+
+\category{RUNS}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+% \cB{66666} \cB{7777} \cB{888} \cB{99} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cB{0123456789} \cFW{FF} \dotfill & \score{X}{25} \\[2pt]
+\cB{22} \cB{333} \cB{4444} \cB{55555} \dotfill & \score{X}{25} \\[2pt]
+\cB{00} \cB{111} \cB{222} \cB{333} \cB{444} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FFFF} \cB{111} \cB{22} \cB{33} \cB{444} \dotfill \desc{Any consecutive Nos} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FF} \cR{123} \cR{D} \cB{456} \cB{D} \cG{789} \cG{D} \dotfill \desc{3 suits} \dotfill & \score{C}{30} \\[2pt]
+\cB{D} \cB{112233445} \cR{55} \cG{55} \dotfill \desc{Pairs Match Single} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{SAME NUMBER}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{FF} \cB{111111} \cR{111111} \dotfill & \score{X}{25} \\[2pt]
+% \cB{111} \cB{11} \cB{111} \cB{1111} \cB{11} \dotfill & \score{C}{30} \\[2pt]
+\cB{111} \cFW{SWEN} \cR{111} \cG{DDDD} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FFF} \cB{1111} \cR{1111} \cG{DDD} \dotfill & \score{X}{25} \\[2pt]
+% \cB{11} \cB{DD} \cB{111} \cB{D} \cB{1111} \cB{DD} \dotfill & \score{X}{25} \\[2pt]
+%\cFW{FF} \cB{11} \cB{11} \cB{11} \cB{11} \cB{DD} \cB{DD} \dotfill & \score{X}{25} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{THESE NOS ONLY}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cB{1111} \cR{4444} \cG{7777} \cFW{NN} \dotfill \desc{Any Wind} \dotfill & \score{X}{25} \\[2pt]
+\cB{222} \cB{5555} \cR{5555} \cR{888} \dotfill & \score{X}{25} \\[2pt]
+% \cB{111} \cB{444} \cB{44} \cB{777} \cB{888} \dotfill & \score{C}{30} \\[2pt]
+%\cB{22} \cB{444} \cB{555} \cB{777} \cB{888} \dotfill & \score{C}{30} \\[2pt]
+\cB{222} \cB{666} \cFW{NN} \cG{777} \cG{999} \dotfill \desc{Any Wind} \dotfill & \score{X}{25} \\[2pt]
+\cB{333} \cB{DD} \cG{5555} \cR{777} \cR{DD} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cB{147D} \cR{258D} \cG{369D} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{MATH}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+%\cB{111111} \cB{999999} \cB{10} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cB{444} \cB{444} \cB{888888} \dotfill & \score{X}{25} \\[2pt]
+\cR{222} \cB{333} \cFW{SWEN} \cG{5555}  \dotfill & \score{X}{25} \\[2pt]
+%\cB{30} \cR{21} \cB{51} \cR{D} \cB{30} \cR{21} \cB{51} \cR{D} \dotfill \desc{2 suit} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cB{2222} \cB{7777} \cB{9999} \dotfill \desc{or FF 4444+5555=9999} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FF} \cB{222} \cB{555} \cR{777} \cG{DDD} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FFFF} \cB{3333} \cB{7777} \cR{10} \dotfill & \score{X}{25} \\[2pt]
+\end{tabularx}
+\categoryend
+
+
+
+
+\category{MISC}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+%\cB{555} \cB{555} \cB{555} \cB{DDDDD} \dotfill & \score{C}{30} \\[2pt]
+\cFW{FF} \cB{111} \cB{DDD} \cR{222} \cR{DDD} \dotfill & \score{X}{25} \\[2pt]
+\cFW{NEE} \cFW{SWW} \cB{333} \cR{555} \cG{99} \dotfill & \score{X}{25} \\[2pt]
+\cFW{NNE} \cFW{SSW} \cB{222} \cR{444} \cG{88} \dotfill & \score{X}{25} \\[2pt]
+\cFW{FFFFFFFF} \cB{123456} \dotfill & \score{X}{25} \\[2pt]
+\cB{0N10NS} \cR{NEEDED} \dotfill \desc{Good Luck} \dotfill & \score{C}{30} \\[2pt]
+\cB{W1ND0WS} \cB{333} \cG{4444} \dotfill \desc{Good Luck} \dotfill & \score{C}{30} \\[2pt] 
+\end{tabularx}
+\categoryend
+
+
+\category{Call Me}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cB{8675309} \cR{8675309} \dotfill & \score{C}{30} \\[2pt]
+\cB{4842098} \cR{4842098} \dotfill & \score{C}{30} \\[2pt]
+\cB{5714762} \cR{5714762} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\end{multicols}
+\end{document}

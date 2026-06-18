@@ -1,0 +1,147 @@
+\documentclass[8pt]{extarticle}
+\usepackage[paperwidth=15.25in, paperheight=4in, margin=0.2in]{geometry}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% NMJL Style Colors
+\definecolor{mjred}{RGB}{210, 30, 40}
+\definecolor{mjblue}{RGB}{20, 60, 180}
+\definecolor{mjgreen}{RGB}{30, 140, 50}
+\definecolor{mjblack}{RGB}{0,0,0}
+\definecolor{mjgray}{RGB}{100, 100, 100}
+
+% Macros
+\newcommand{\cB}[1]{\textcolor{mjblue}{\textbf{#1}}} % Font Blue for Dots
+\newcommand{\cR}[1]{\textcolor{mjred}{\textbf{#1}}} % Font Red for Cracks
+\newcommand{\cG}[1]{\textcolor{mjgreen}{\textbf{#1}}} % Font Green for Bams
+\newcommand{\cFW}[1]{\textcolor{mjblack}{\textbf{#1}}} % Font Black for Flowers and Winds
+\newcommand{\score}[2]{\textbf{#1} \hspace{1mm} \textbf{#2}}
+\newcommand{\desc}[1]{\textcolor{mjgray}{\textit{#1}}}
+
+\newcommand{\category}[1]{
+    \vspace{2mm}
+    \begin{tcolorbox}[colback=white, colframe=black, fonttitle=\bfseries\normalsize, title=\centering #1, boxrule=0.5pt, arc=0pt, left=1pt, right=1pt, top=1pt, bottom=1pt, coltitle=black, colbacktitle=black!10]
+}
+\newcommand{\categoryend}{\end{tcolorbox}}
+
+\begin{document}
+
+\setlength{\columnsep}{0.15in}
+\raggedcolumns
+\begin{multicols}{3}
+
+
+\category{Example Category}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{FFF} \cFW{NN} \cR{111} \cG{222} \cB{333} \dotfill \desc{Descriptions look like this} \dotfill & \score{X}{25} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{Category 1}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{} \cB{} \cR{} \cG{} \cR{} \cB{} \dotfill \desc{D one suit, Any Two Suits, These Nos. Only} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cR{} \cG{} \cB{} \dotfill \desc{3 Suits} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cR{} \cG{} \cG{} \cB{} \dotfill \desc{3 Suits} \dotfill & \score{X}{25} \\[2pt]
+\cG{} \cR{} \cB{} \cB{} \dotfill \desc{Dragons Match Years} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cG{} \cG{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cR{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cFW{} \cB{} \cR{} \cG{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cR{} \cG{} \cG{} \cB{} \dotfill \desc{3 Suits} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cR{} \cFW{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cG{} \cFW{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{Category 2}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{} \cR{} \cG{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cFW{} \cFW{} \cFW{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cFW{} \cB{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \cR{} \cG{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cFW{} \cB{} \cR{} \cG{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cFW{} \cFW{} \cFW{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cFW{} \cFW{} \cFW{} \cB{} \dotfill \desc{Any Number Pair} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+
+
+
+\category{Category 3}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+% \cB{} \cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cB{} \cFW{} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cB{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \cB{} \cB{} \cB{} \dotfill \desc{Any consecutive Nos} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cR{} \cR{} \cB{} \cB{} \cG{} \cG{} \dotfill \desc{3 suits} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cB{} \cR{} \cG{} \dotfill \desc{Pairs Match Single} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{Category 4}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cFW{} \cB{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+% \cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cFW{} \cR{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \cR{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+% \cB{} \cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+%\cFW{} \cB{} \cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{Category 5}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cB{} \cR{} \cG{} \cFW{} \dotfill \desc{Any Wind} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cR{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+% \cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+%\cB{} \cB{} \cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cB{} \cFW{} \cG{} \cG{} \dotfill \desc{Any Wind} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cB{} \cG{} \cR{} \cR{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cB{} \cR{} \cG{} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\category{Category 6}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+%\cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cB{} \cB{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\cR{} \cB{} \cFW{} \cG{}  \dotfill & \score{X}{25} \\[2pt]
+%\cB{} \cR{} \cB{} \cR{} \cB{} \cR{} \cB{} \cR{} \dotfill \desc{2 suit} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cB{} \cB{} \cB{} \dotfill \desc{or FF 4444+5555=9999} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \cB{} \cR{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \cB{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+\end{tabularx}
+\categoryend
+
+
+
+
+\category{Category 7}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+%\cB{} \cB{} \cB{} \cB{} \dotfill & \score{C}{30} \\[2pt]
+\cFW{} \cB{} \cB{} \cR{} \cR{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cFW{} \cB{} \cR{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cFW{} \cB{} \cR{} \cG{} \dotfill & \score{X}{25} \\[2pt]
+\cFW{} \cB{} \dotfill & \score{X}{25} \\[2pt]
+\cB{} \cR{} \dotfill \desc{Good Luck} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cB{} \cG{} \dotfill \desc{Good Luck} \dotfill & \score{C}{30} \\[2pt] 
+\end{tabularx}
+\categoryend
+
+
+\category{Category 8}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\cB{} \cR{} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cR{} \dotfill & \score{C}{30} \\[2pt]
+\cB{} \cR{} \dotfill & \score{C}{30} \\[2pt]
+\end{tabularx}
+\categoryend
+
+\end{multicols}
+\end{document}
+
