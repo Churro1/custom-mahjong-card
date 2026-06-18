@@ -3,10 +3,10 @@ A LaTeX template for creating personalized, foldable Mahjong rule and scoring ca
 
 ## Features
 
-Standard Sizing: Pre-configured to 15.25in x 4in to mimic the dimensions of a traditional foldable Mahjong card.
-3-Column Layout: Automatically flows your categories across three columns.
-Color-Coded Suits: Built-in macros for the traditional Blue, Red, Green, and Black color scheme.
-Neat Formatting: Pre-built styling for descriptions,concealed/exposed markings, and point values.
+- Standard Sizing: Pre-configured to 15.25in x 4in to mimic the dimensions of a traditional foldable Mahjong card.
+- 3-Column Layout: Automatically flows your categories across three columns.
+- Color-Coded Suits: Built-in macros for the traditional Blue, Red, Green, and Black color scheme.
+- Neat Formatting: Pre-built styling for descriptions,concealed/exposed markings, and point values.
 
 ## Prerequisites
 To compile this template, you will need a working LaTeX distribution (such as TeX Live, MiKTeX, or MacTeX) or an online LaTeX editor like Overleaf.
@@ -17,17 +17,16 @@ The template uses simple custom LaTeX commands (macros) to make writing out Mahj
 ### Suits and Colors
 Use the following commands to wrap your tile text. The letters inside the curly braces will automatically be bolded and colored appropriately:
 
-\cB{...} : Blue (Traditionally used for Dots) - e.g., \cB{111}
-\cR{...} : Red (Traditionally used for Cracks) - e.g., \cR{2222}
-\cG{...} : Green (Traditionally used for Bams) - e.g., \cG{33}
-\cFW{...}: Black (Traditionally used for Flowers and Winds) - e.g., \cFW{FFF}
+- \cB{...} : Blue (Traditionally used for Dots) - e.g., \cB{111}
+- \cR{...} : Red (Traditionally used for Cracks) - e.g., \cR{2222}
+- \cG{...} : Green (Traditionally used for Bams) - e.g., \cG{33}
+- \cFW{...}: Black (Traditionally used for Flowers and Winds) - e.g., \cFW{FFF}
 
 ### Hand Descriptions and Scores
-Descriptions: Use \desc{...} to add the gray, italicized instructional text next to a hand (e.g., \desc{Any 3 Suits}).
-Scores: Use \score{Type}{Points} at the end of a line to display the score.
-Type: Typically X (Exposed) or C (Concealed).
-Points: The point value (e.g., 25, 30).
-Example: \score{C}{30}
+- Descriptions: Use \desc{...} to add the gray, italicized instructional text next to a hand (e.g., \desc{Any 3 Suits}).
+- Scores: Use \score{Type}{Points} at the end of a line to display the score.
+- Type: Typically X (Exposed) or C (Concealed).
+- Points: The point value (e.g., 25, 30).
 
 ### Creating Categories
 Group your hands using the \category and \categoryend tags. Every category acts as a stylized box.
